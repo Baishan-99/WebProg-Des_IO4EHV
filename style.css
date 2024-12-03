@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
+
+* {
+    font-family: "JetBrains Mono", Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+i,
+em {
+    font-style: italic;
+}
+
+p {
+    font-family: "JetBrains Mono", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: darkslategray;
+    overflow-y: auto;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+nav li:hover {
+    background-color: slategray;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 15px;
+}
+
+header {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+body {
+    font-family: "JetBrains Mono", Arial, Helvetica, sans-serif;
+    margin-left: 250px;
+    background-image: url("res/images/universe.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+   }
+}

@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <style>
+            #playPauseButton {
+                background: linear-gradient(to bottom, #002366, #000428);
+                color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.2);
+                padding: 10px 20px;
+                font-family: "Arial", sans-serif;
+            }
+        </style>
+        <title>Solar system 🚀</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+            rel="stylesheet"
+        />
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Solar System</h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Welcome to the space! 🌌</a>
+                        </li>
+                        <li><a href="sun.html">Sun ☀️</a></li>
+                        <li><a href="mercury.html">Mercury 👾</a></li>
+                        <li><a href="venus.html">Venus 🟠</a></li>
+                        <li><a href="earth.html">Earth 🌍</a></li>
+                        <li><a href="mars.html">Mars 🔴👽</a></li>
+                        <li><a href="jupiter.html">Jupiter 🟤</a></li>
+                        <li><a href="saturn.html">Saturn 🪐</a></li>
+                        <li><a href="uranus.html">Uranus ⚪</a></li>
+                        <li><a href="neptune.html">Neptune 🔵</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <img src="res/images/solarsystem.jpg" alt="A Naprendszer képe" width="640"/>
+
+            <title>Welcome to space, human!</title>
+            <p>Dont't forget it, never trust in HAL. By the way,
+            <br>feel free to look around on this website
+            <br>to get familiar with the closer space.</br>
+            <p>Short video about our solar system:</p>
+
+            <video
+                id="myVideo"
+                height="480"
+                width="640"
+            >
+                <source src="res/videos/solarsystem.mp4" type="video/mp4" />
+            </video>
+            <button
+                id="playPauseButton"
+                style="display: block; margin-left: 0"
+                onclick="playPause()"
+            >
+                play/pause
+            </button>
+
+            <script>
+                var video = document.getElementById("myVideo");
+
+                function playPause() {
+                    if (video.paused) {
+                        video.play();
+                    } else {
+                        video.pause();
+                    }
+                }
+            </script>
+        </main>
+        <footer>
+            <div><p><span style="color: darkorchid;">Made by Balázs Dombi, 2024.</span></p></div>
+        </footer>
+    </body>
+</html>
